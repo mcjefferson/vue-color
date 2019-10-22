@@ -2,21 +2,6 @@
   <div role="application" aria-label="Material color picker" class="vc-material">
     <ed-in class="vc-material-hex" label="hex" v-model="colors.hex"
       :style="{ borderColor: colors.hex }" @change="onChange"></ed-in>
-
-    <div class="vc-material-split">
-      <div class="vc-material-third">
-        <ed-in label="r" v-model="colors.rgba.r"
-        @change="onChange"></ed-in>
-      </div>
-      <div class="vc-material-third">
-        <ed-in label="g" v-model="colors.rgba.g"
-        @change="onChange"></ed-in>
-      </div>
-      <div class="vc-material-third">
-        <ed-in label="b" v-model="colors.rgba.b"
-        @change="onChange"></ed-in>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -87,13 +72,6 @@ export default {
   border-bottom-width: 2px;
   border-bottom-style: solid;
 }
-.vc-material-split {
-  display: flex;
-  margin-right: -10px;
-  padding-top: 11px;
-}
-.vc-material-third {
-  flex: 1;
-  padding-right: 10px;
-}
+
+
 </style>
